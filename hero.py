@@ -1,2 +1,2 @@
-class Hero():
-    def __init__(self,name,rank)
+class Protagnist():
+    def __init__(self,name,)
