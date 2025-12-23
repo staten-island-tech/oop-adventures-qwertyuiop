@@ -1,11 +1,23 @@
-class Antagonist:
-    def Bison(self, name):
+""" class Antagonist:
+    def Bison(self):
         self.name = "M. Bison"
-        self.health = 100
-        self.stamina = 100
-print("Choose a character: Ryu, Ken, Sagat, M. Bison")
-name = input("What would you like to choose?: ")
-characters = Antagonist()
-if name == "M. Bison":
-    print(characters.Bison(name))
-        
+        self.health = 1000
+        self.stamina = 1000
+    def Sagat(self):
+        self.name = "Sagat"
+        self.health = 1000
+        self.stamina = 1000
+
+def user_interaction():
+    character = Antagonist(interaction)
+    interaction = input("Who do you want to choose?: ")
+    if interaction == "Sagat":
+        print(f"You just picked Sagat")
+        Sagat.Antagonist(character) """
+
+characters = 
+
+
+
+
+
