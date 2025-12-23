@@ -9,6 +9,6 @@ class Protagnist():
 
 print ("Choose your characters: Ryu, Ken, M. Bison, and Sagat.")
 x = input("What would you like to choose?")
-Protagnist.Ryu
+Protagnist(x)
 
 
