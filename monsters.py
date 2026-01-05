@@ -1,5 +1,6 @@
 class Monster:
-    def 
+    def Bokoblins(self):
+        
 
 
 
