@@ -1,14 +1,17 @@
-class Protagnist():
-    def Ryu(self):
-        self.name = "Ryu"
-        self.health = 100
-        self.stamina = 100
-        print (f"Here are Ryu's stats: Health:100, Stamina:100")
-    def Ken(self,name):
-        self.name = "Ken"
+# class Protagnist:
+#     def __init__(self,name):
+#         self.name = name
+#         self.health = 1000
+#         self.stamina = 1000
+#         print (f"Here are {name}'s stats: Health:{self.health}, Stamina:{self.stamina}")
+#     def Ryu(self):
+#         self.name = "Ryu"
+#         self.health = 1000
+#         self.stamina = 1000
+# name = input("What is your character's name?:")
+# self = Protagnist(f"{name}")
 
-print ("Choose your characters: Ryu, Ken, M. Bison, and Sagat.")
-x = input("What would you like to choose?")
-Protagnist(x)
+
+
 
 
