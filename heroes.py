@@ -1,13 +1,11 @@
-Champions = [
+class Heroes:
+    def __init__(self):
+        self.name="YoYo"
+        self.health = 120
+        self.faction= "Champion"
+        self.description = "YoYo is a legendary warrior who was chosen to be Lumy's knight in shining armor. However, the champion has just awoken from his deep slumber."
 
-{
-    "name": "YoYo",
-    "faction": "Champion",
-    "health": 120,
-    "description": "YoYo is a legendary warrior who was chosen to be Lumy's knight in shining armor. However, the champion has just awoken from his deep slumber."
-},
-
-{
+""" {
     "name": "KoKo",
     "faction": "Champion",
     "health": 115,
@@ -42,15 +40,8 @@ Champions = [
     "description": "Lumy is the princess of Goo Mania, protected by her loving knights and warriors who would lay their life down to serve her."
 
 }
+] """   
 
-]
-
-""" class Enter: """
-
-def enter():
-        print("Welcome to Doria, the world of multiple opportunities. There exists evils and different social classes. You are YoYo, here is your description: ")
-        print(Champions[0])
-enter()
 
 
 
