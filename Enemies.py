@@ -37,7 +37,10 @@ Monsters = [
 }
 ]
 
-class 
+class Choices():
+    def fight():
+    def heal():
+    def run():
 
 
 
