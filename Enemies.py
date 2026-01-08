@@ -1,50 +1,9 @@
-# Monsters = [
-# {
-#     "name": "Boko",
-#     "faction": "Royal",
-#     "health": 45
-# },
-# {
-#     "name":"Blue Boko",
-#     "faction": "Prestige",
-#     "health": 65
-# },
-# {
-#     "name": "Black Boko",
-#     "faction": "God",
-#     "health": 85
-# },
-# {
-#     "name": "Silver Boko",
-#     "faction": "Champion",
-#     "health": 110
-# },
-# {
-#     "name": "Golden Boko",
-#     "faction": "Champion",
-#     "health": 150
-# },
-# {
-#     "name": "Zook",
-#     "faction": "Royal",
-#     "health": 35
-# }
-# ]
-class Boko():
-    def __init__(self):
-        self.name = "Boko"
-        self.health = 45
-        self.faction = "Royal"
-    def takedamage(self, damage):
-        damage = 
-        
-
-
 Monsters = [
 
 {
     "name": "Boko",
     "faction": "Royal",
+    "city": "Leafy Town",
     "health": 45,
     "atk": 5
 },
@@ -52,6 +11,7 @@ Monsters = [
 {
     "name":"Blue Boko",
     "faction": "Prestige",
+    "city": "Jumbo CIty",
     "health": 65,
     "atk": 15
 },
@@ -59,6 +19,7 @@ Monsters = [
 {
     "name": "Black Boko",
     "faction": "God",
+    "city": "Death Mountain",
     "health": 85,
     "atk": 20
 },
@@ -66,6 +27,7 @@ Monsters = [
 {
     "name": "Silver Boko",
     "faction": "Champion",
+    "city": "Goo Mania"
     "health": 110,
     "atk": 25
 },
@@ -73,6 +35,7 @@ Monsters = [
 {
     "name": "Golden Boko",
     "faction": "Champion",
+    "city": "Holy Sozia",
     "health": 150,
     "atk": 35
 },
@@ -80,6 +43,7 @@ Monsters = [
 {
     "name": "Zook",
     "faction": "Royal",
+    "city": "Capital Drake",
     "health": 35,
     "atk":3
 }
@@ -103,6 +67,7 @@ class Monsters():
     def Zook_fight():
         atk = 3
 
+ 
 
 
 

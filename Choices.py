@@ -1,19 +1,19 @@
 Main_attacks = [
 {
     "name": "Spin kick",
-    "damage": 5
+    "damage": 15
 },
 {
     "name": "Sweep kick",
-    "damage":2
+    "damage": 8
 },
 {
     "name": "Left hook",
-    "damage": 2
+    "damage": 25
 },
 {
-    "name": "Uppercut",
-    "damage":3
+    "name": "Uppercut combo",
+    "damage":30
 }
 ]
 
@@ -21,5 +21,3 @@ def attacks():
     print("What atack do you wish to inflict?")
     for i,item in enumerate(Main_attacks):
         print (i,":",item['name'])
-
-        
