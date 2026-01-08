@@ -55,7 +55,7 @@ class Monsters():
         self.atk = atk
     def Boko_fight():
         atk = 5
-        print ("Boko executed a ")
+        print ("Boko executed a leaf hurricane that barely winded you. 5 health was lost.")
     def Blue_Boko_fight():
         atk = 15
     def Black_Boko_fight():
