@@ -4,8 +4,18 @@ class Heroes:
         self.health = 120
         self.faction= "Champion"
         self.description = "YoYo is a legendary warrior who was chosen to be Lumy's knight in shining armor. However, the champion has just awoken from his deep slumber."
+    
+    attacks = [
 
-""" {
+        {
+            "name": "Spinkick",
+            "atk": 15
+        }
+    ]
+
+
+
+""" {   
     "name": "KoKo",
     "faction": "Champion",
     "health": 115,
