@@ -37,10 +37,16 @@ Monsters = [
 }
 ]
 
-class Choices():
-    def fight():
-    def heal():
-    def run():
+class Monsters():
+    def Boko_fight():
+        atk = 
+    def Blue_Boko_fight():
+
+    def Black_Boko_fight():
+
+    def Silver_Boko_fight():
+
+    def Golden_Boko_fight():
 
 
 
