@@ -27,7 +27,7 @@ Monsters = [
 {
     "name": "Silver Boko",
     "faction": "Boss",
-    "city": "Goo Mania"
+    "city": "Goo Mania",
     "health": 110,
     "atk": 25
 },
