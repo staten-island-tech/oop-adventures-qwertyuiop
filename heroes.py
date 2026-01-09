@@ -13,44 +13,42 @@ class Heroes:
         }
     ]
 
+class Monsters():
+    def __init__(self,hp,atk):
+        self.hp = hp
+        self.atk = atk
+    def Boko_fight(self):
+        self.hp = 45
+        self.atk = 5
+        Heroes.health - self.atk = Heroes.health
+        print ("Boko executed a leaf hurricane that barely winded you. 5 health was lost.")
+    def Blue_Boko_fight(self):
+        self.hp = 65
+        self.atk = 15
+        Heroes.health - self.atk = Heroes.health
+        print ("Blue Boko threw jumbo sized machinery at you dealing a total of 15 damage.")
+    def Black_Boko_fight(self):
+        self.hp = 85
+        self.atk = 20
+        Heroes.health - self.atk = Heroes.health
+        print ("Black Boko raised the dead and skeletons swarm for 20 damage.")
+    def Silver_Boko_fight(self):
+        self.hp = 110
+        self.atk = 25
+        Heroes.health - self.atk = Heroes.health
+        print ("Silver Boko jumps and rains a gumdrop barrage. You lost 25 health.")
+    def Golden_Boko_fight(self):
+        self.hp = 150
+        self.atk = 35
+        Heroes.health - self.atk = Heroes.health
+        print ("Moving as fast as wind, the infamous Black Boko hit a Wuxi Fingerhold that deals 35 damage.")
+    def Zook_fight(self):
+        self.hp = 35
+        self.atk = 3
+        Heroes.health - self.atk = Heroes.health
+        print ("Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 3 damage.")
 
 
-""" {   
-    "name": "KoKo",
-    "faction": "Champion",
-    "health": 115,
-    "description": "KoKo is the elegant and gentle warrior of Leafy Town, the idolized leader."
-},
-
-{
-    "name": "DoDo",
-    "faction": "Champion",
-    "health": 135,
-    "description": "DoDo is the charismatic and light-hearted champion from Jumbo City. From the fiery depths of Death Mountain, Daruk protects his allies with his flaming personality and defense."
-},
-
-{
-    "name": "Uro",
-    "faction": "Champion",
-    "health": 110,
-    "description": "Uro is the shining and charismatic warrior of Goo Mania, protecting her people from the desert storms to monsters from the deep evils."
-},
-
-{
-    "name": "Riko",
-    "faction": "Champion",
-    "health": 120,
-    "description": "Riko is the soaring champion of the skies, protecting his friends from above from gails to flying arrows."
-},
-
-{
-    "name": "Lumy",
-    "faction": "Royal",
-    "health": 35,
-    "description": "Lumy is the princess of Goo Mania, protected by her loving knights and warriors who would lay their life down to serve her."
-
-}
-] """   
 
 
 
