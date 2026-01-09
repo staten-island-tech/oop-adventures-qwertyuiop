@@ -34,7 +34,7 @@ locations = [
 
 class Map:
     def location():
-        print("Where do you want to explore first traveler?")
+        print("Welcome to the world of Doria, the land of the surprises and evil. Where do you want to explore first traveler?")
         for index, item in enumerate(locations):
             print(index, ":", item["name"])
         choice = int(input("According to the number that accomodates the location, where do you want to go? "))
