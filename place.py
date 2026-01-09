@@ -31,25 +31,37 @@ locations = [
 }
 
 ]
-
+from heroes import Heroes
 class Map:
     def location():
         print("Welcome to the world of Doria, the land of the surprises and evil. Where do you want to explore first traveler?")
         for index, item in enumerate(locations):
             print(index, ":", item["name"])
-        choice = int(input("According to the number that accomodates the location, where do you want to go? "))
+        choice = int(input("According to the number that accomodates the location, where do you want to go?: "))
         if choice == 0:
             print("Going to Leafy Town!")
+            print("Fighting Boko")
+            Heroes.show_attacks
         elif choice == 1:
             print("Going to Jumbo City!")
+            print("Fighting Blue Boko")
+            Heroes.show_attacks
         elif choice == 2:
             print("Going to Death Mountain!")
+            print("Fighting Black Boko")
+            Heroes.show_attacks
         elif choice == 3:
             print("Going to Goo Mania!")
+            print("Fighting Silver Boko")
+            Heroes.show_attacks
         elif choice == 4:
             print("Going to Holy Sozia!")
+            print("Fighting Golden Boko")
+            Heroes.show_attacks
         elif choice == 5:
             print("Going to Capital Drake!")
+            print("Fighting Zook")
+            Heroes.show_attacks
         else:
             print("Error! Please enter the number that accomodates the location of where you want to go!")
     location()

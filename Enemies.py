@@ -2,7 +2,7 @@ Monsters = [
 
 {
     "name": "Boko",
-    "faction": "Mini-Boss",
+    "faction": "Boss",
     "city": "Leafy Town",
     "health": 125,
     "atk": 15
@@ -42,7 +42,7 @@ Monsters = [
 
 {
     "name": "Zook",
-    "faction": "Mini-Boss",
+    "faction": "Boss",
     "city": "Capital Drake",
     "health": 120,
     "atk": 25
