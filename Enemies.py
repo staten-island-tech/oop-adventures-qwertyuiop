@@ -1,5 +1,4 @@
 Monsters = [
-
 {
     "name": "Boko",
     "faction": "Mini-Boss",

@@ -1,7 +1,7 @@
 from place import Map
-class Game():
-    def start(self):
-        Map.location
+    
+input("Start Game Press Enter to Play")
+Map.location
     
 
 
