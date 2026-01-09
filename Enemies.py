@@ -4,8 +4,8 @@ Monsters = [
     "name": "Boko",
     "faction": "Mini-Boss",
     "city": "Leafy Town",
-    "health": 45,
-    "atk": 5
+    "health": 125,
+    "atk": 15
 },
 
 {
@@ -13,7 +13,7 @@ Monsters = [
     "faction": "Boss",
     "city": "Jumbo CIty",
     "health": 65,
-    "atk": 15
+    "atk": 55
 },
 
 {
@@ -21,7 +21,7 @@ Monsters = [
     "faction": "Boss",
     "city": "Death Mountain",
     "health": 85,
-    "atk": 20
+    "atk": 45
 },
 
 {
@@ -44,8 +44,8 @@ Monsters = [
     "name": "Zook",
     "faction": "Mini-Boss",
     "city": "Capital Drake",
-    "health": 35,
-    "atk":3
+    "health": 120,
+    "atk": 25
 }
 ]
 
@@ -54,16 +54,16 @@ class Monsters():
         self.hp = hp
         self.atk = atk
     def Boko_fight(self):
-        self.hp = 45
-        self.atk = 5
+        self.hp = 125
+        self.atk = 15
         print ("Boko executed a leaf hurricane that barely winded you. 5 health was lost.")
     def Blue_Boko_fight(self):
         self.hp = 65
-        self.atk = 15
+        self.atk = 55
         print ("Blue Boko threw jumbo sized machinery at you dealing a total of 15 damage.")
     def Black_Boko_fight(self):
         self.hp = 85
-        self.atk = 20
+        self.atk = 45
         print ("Black Boko raised the dead and skeletons swarm for 20 damage.")
     def Silver_Boko_fight(self):
         self.hp = 110
@@ -74,8 +74,8 @@ class Monsters():
         self.atk = 35
         print ("Moving as fast as wind, the infamous Black Boko ")
     def Zook_fight(self):
-        self.hp = 35
-        self.atk = 3
+        self.hp = 120
+        self.atk = 25
 
  
 
