@@ -39,13 +39,13 @@ class Map:
             print(index, ":", item["name"])
         choice = int(input("According to the number that accomodates the location, where do you want to go? "))
         if choice == 0:
-            print("Going to Leafy Town!")
+            print("Going to Leafy Town! You are about to fight Boko!")
         elif choice == 1:
-            print("Going to Jumbo City!")
+            print("Going to Jumbo City! You are going to fight Blue Boko!")
         elif choice == 2:
-            print("Going to Death Mountain!")
+            print("Going to Death Mountain! You are going to fight Black Boko!")
         elif choice == 3:
-            print("Going to Goo Mania!")
+            print("Going to Goo Mania! You are going to fight Silver Boko!")
         elif choice == 4:
             print("Going to Holy Sozia!")
         elif choice == 5:
