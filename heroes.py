@@ -32,7 +32,6 @@ class Heroes:
         print("What attack do you want to execute?")
         for i, item in enumerate(self.attacks):
             print(i, ":", item['name'])
-    
     choice = int(input("Enter your choice: "))
     if choice == 0:
         print("You used spinkick! You dealt 15 damage!")
@@ -44,7 +43,7 @@ class Heroes:
         print("You used uppercut combo! You dealt 30 damage!")
     else:
         print("Invalid choice!")
-    
+YoYo = Heroes()
 
 
 
