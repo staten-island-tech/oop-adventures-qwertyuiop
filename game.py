@@ -1,8 +1,7 @@
 from place import Map
-from heroes import Heroes
+from heroes import Attacks
 from heroes import Monsters
-def game():
-    Map.location
-    
-game()
+Map.location
+Attacks.show_attacks
+Monsters.Boko_fight
 

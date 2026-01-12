@@ -72,10 +72,11 @@ class Monsters():
     def Golden_Boko_fight(self):
         self.hp = 150
         self.atk = 35
-        print ("Moving as fast as wind, the infamous Black Boko ")
+        print ("Moving as fast as wind, the infamous Black Boko hit a Wuxi Fingerhold that deals 35 damage.")
     def Zook_fight(self):
         self.hp = 120
         self.atk = 25
+        print ("Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 3 damage.")
 
  
 
