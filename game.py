@@ -1,8 +1,7 @@
 from place import Map
-class Game():
-    def start(self):
-        Map.location
-        
-
-
+from heroes import Heroes
+def game():
+    Map.location
+    
+game()
 

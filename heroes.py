@@ -29,22 +29,8 @@ attacks = [
 
 ]
 
-def show_attacks():
-    print("What attack do you want to execute?")
-    for i, item in enumerate(attacks):
-        print(i, ":", item['name'])
-    choice = int(input("Enter your choice: "))
-    if choice == 0:
-        print("You used spinkick! You dealt 15 damage!")
-    elif choice == 1:
-        print("You used sweep kick! You dealt 8 damage!")
-    elif choice == 2:
-        print("You used left hook! You dealt 25 damage!")
-    elif choice == 3:
-        print("You used uppercut combo! You dealt 30 damage!")
-    else:
-        print("Invalid choice!")
-show_attacks()
+
+
 
 
 class Monsters():
