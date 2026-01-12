@@ -45,7 +45,7 @@ class Attacks():
             print("You used uppercut combo! You dealt 30 damage!")
         else:
             print("Invalid choice!")
-
+    show_attacks()
 
 
 
