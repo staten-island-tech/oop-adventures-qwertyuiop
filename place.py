@@ -47,9 +47,9 @@ class Map:
         elif choice == 3:
             print("Going to Goo Mania! You are going to fight Silver Boko!")
         elif choice == 4:
-            print("Going to Holy Sozia!")
+            print("Going to Holy Sozia! You are going to fight Golden Boko!")
         elif choice == 5:
-            print("Going to Capital Drake!")
+            print("Going to Capital Drake! You are going to fight Zook!")
         else:
             print("Error! Please enter the number that accomodates the location of where you want to go!")
     location()

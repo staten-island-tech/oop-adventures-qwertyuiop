@@ -1,9 +1,10 @@
 from place import Map
-from heroes import Attacks
-from Monsters_Stats import Heroes, Monsters
+from heroes import Attacks, Monsters
+
 Map.location
-Attacks.show_attacks
-Monsters.Boko_fight
+monsters = Monsters(25,25)
+Attacks.show_attacks()
+monsters.Boko_fight()
 
     
 

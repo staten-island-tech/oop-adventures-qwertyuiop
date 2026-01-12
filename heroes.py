@@ -51,39 +51,44 @@ class Attacks:
 
 class Monsters():
     def __init__(self,hp,atk):
-        self.hp = hp
-        self.atk = atk
+            self.hp = hp
+            self.atk = atk
     def Boko_fight(self):
-        self.hp = 45
-        self.atk = 5
-        Heroes.health - self.atk = Heroes.health
-        print ("Boko executed a leaf hurricane that barely winded you. 5 health was lost.")
+            self.hp = 45
+            self.atk = 5
+            Heroes.health - Monsters.atk
+            print ("Boko executed a leaf hurricane that barely winded you. 5 health was lost.")
+            print(Heroes.health)
     def Blue_Boko_fight(self):
-        self.hp = 65
-        self.atk = 15
-        Heroes.health - self.atk = Heroes.health
-        print ("Blue Boko threw jumbo sized machinery at you dealing a total of 15 damage.")
+            self.hp = 65
+            self.atk = 15
+            Heroes.health - Monsters.atk
+            print(Heroes.health)
+            print ("Blue Boko threw jumbo sized machinery at you dealing a total of 15 damage.")
     def Black_Boko_fight(self):
-        self.hp = 85
-        self.atk = 20
-        Heroes.health - self.atk = Heroes.health
-        print ("Black Boko raised the dead and skeletons swarm for 20 damage.")
+            self.hp = 85
+            self.atk = 20
+            Heroes.health - Monsters.atk
+            print ("Black Boko raised the dead and skeletons swarm for 20 damage.")
+            print(Heroes.health)
     def Silver_Boko_fight(self):
-        self.hp = 110
-        self.atk = 25
-        Heroes.health - self.atk = Heroes.health
-        print ("Silver Boko jumps and rains a gumdrop barrage. You lost 25 health.")
+            self.hp = 110
+            self.atk = 25
+            Heroes.health - Monsters.atk
+            print ("Silver Boko jumps and rains a gumdrop barrage. You lost 25 health.")
+            print(Heroes.health)
     def Golden_Boko_fight(self):
-        self.hp = 150
-        self.atk = 35
-        Heroes.health - self.atk = Heroes.health
-        print ("Moving as fast as wind, the infamous Black Boko hit a Wuxi Fingerhold that deals 35 damage.")
+            self.hp = 150
+            self.atk = 35
+            Heroes.health - Monsters.atk
+            print ("Moving as fast as wind, the infamous Black Boko hit a Wuxi Fingerhold that deals 35 damage.")
+            print(Heroes.health)
     def Zook_fight(self):
-        self.hp = 35
-        self.atk = 3
-        Heroes.health - self.atk = Heroes.health
-        print ("Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 3 damage.")
-
+            self.hp = 35
+            self.atk = 3
+            Heroes.health - Monsters.atk
+            print ("Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 3 damage.")
+            print(Heroes.health)
 
 
 
