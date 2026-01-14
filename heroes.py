@@ -4,7 +4,15 @@ class Heroes:
         self.health = 120
         self.faction= "Champion"
         self.description = "YoYo is a legendary warrior who was chosen to be Lumy's knight in shining armor. However, the champion has just awoken from his deep slumber."
-    
+    def show_attacks():
+        print("What attack do you want to execute?")
+        for i, item in enumerate(attacks):
+            print(i, ":", item['name'])
+        choice = int(input("Enter your choice: "))
+        if 4>choice>=0:
+            print(f"You used {attacks[choice]["name"]}! You dealt {attacks[choice]["damage"]}!")
+        else:
+            print("Invalid choice!")
 
     
 attacks = [
@@ -41,56 +49,7 @@ class Attacks():
         else:
             print("Invalid choice!")
 
-Monsters = [
 
-{
-    "name": "Boko",
-    "faction": "Boss",
-    "city": "Leafy Town",
-    "health": 125,
-    "atk": 15
-},
-
-{
-    "name":"Blue Boko",
-    "faction": "Boss",
-    "city": "Jumbo CIty",
-    "health": 65,
-    "atk": 55
-},
-
-{
-    "name": "Black Boko",
-    "faction": "Boss",
-    "city": "Death Mountain",
-    "health": 85,
-    "atk": 45
-},
-
-{
-    "name": "Silver Boko",
-    "faction": "Boss",
-    "city": "Goo Mania",
-    "health": 110,
-    "atk": 25
-},
-
-{
-    "name": "Golden Boko",
-    "faction": "Boss",
-    "city": "Holy Sozia",
-    "health": 150,
-    "atk": 35
-},
-
-{
-    "name": "Zook",
-    "faction": "Boss",
-    "city": "Capital Drake",
-    "health": 120,
-    "atk": 25
-}
-]
 
 
 class Monsters():

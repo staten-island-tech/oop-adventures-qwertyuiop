@@ -30,43 +30,115 @@ locations = [
     "description": "Capital Drake looks almost identical to cities found in Canada. You can find statues of Drake and his music around the whole capital."
 }
 ]
+
+enemies = [
+
+{
+    "name": "Boko",
+    "faction": "Boss",
+    "city": "Leafy Town",
+    "health": 125,
+    "atk": 15,
+    "attackdescription": "Boko executed a leaf hurricane that barely winded you. 15 health was lost.",
+},
+
+{
+    "name":"Blue Boko",
+    "faction": "Boss",
+    "city": "Jumbo CIty",
+    "health": 65,
+    "atk": 55,
+    "attackdescription":"Blue Boko threw jumbo sized machinery at you dealing a total of 55 damage.",
+},
+
+{
+    "name": "Black Boko",
+    "faction": "Boss",
+    "city": "Death Mountain",
+    "health": 85,
+    "atk": 45,
+    "attackdescription": "Black Boko raised the dead and skeletons swarm for 45 damage.",
+},
+
+{
+    "name": "Silver Boko",
+    "faction": "Boss",
+    "city": "Goo Mania",
+    "health": 110,
+    "atk": 25,
+    "attackdescription": "Silver Boko jumps and rains a gumdrop barrage. You lost 25 health.",
+},
+
+{
+    "name": "Golden Boko",
+    "faction": "Boss",
+    "city": "Holy Sozia",
+    "health": 150,
+    "atk": 35,
+    "attackdescription": "Moving as fast as wind, the infamous Black Boko hit a Wuxi Fingerhold that deals 35 damage.",
+},
+
+{
+    "name": "Zook",
+    "faction": "Boss",
+    "city": "Capital Drake",
+    "health": 120,
+    "atk": 25,
+    "attackdescription": "Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 35 damage.",
+}
+]
+
+
+
 from heroes import *
 class Map:
     def __init__(self):
         self.monster = Monsters()
-    def rounds(self,x):
-        while Heroes.health > 0 and self.monster.hp > 0:
-            Attacks.show_attacks
-            x()
+    def show_attacks():
+        print("What attack do you want to execute?")
+        for i, item in enumerate(attacks):
+            print(i, ":", item['name'])
+        choice = int(input("Enter your choice: "))
+        if 4>choice>=0:
+            print(f"You used {attacks[choice]["name"]}! You dealt {attacks[choice]["damage"]}!")
+        else:
+            print("Invalid choice!")
+
+
+
     def location(self):
         print("Welcome to the world of Doria, the land of the surprises and evil. Where do you want to explore first traveler?")
         for index, item in enumerate(locations):
             print(index, ":", item["name"])
         choice = int(input("According to the number that accomodates the location, where do you want to go?: "))
         if choice == 0:
-            print("Going to Leafy Town! You are about to fight Boko!")
-            self.monster.Boko()
-            self.rounds(self.monster.Boko_fight)
-        elif choice == 1:
-            print("Going to Jumbo City! You are going to fight Blue Boko!")
-            self.monster.Blue_Boko()
-            self.rounds(self.monster.Blue_Boko_fight)
-        elif choice == 2:
-            print("Going to Death Mountain! You are going to fight Black Boko")        
-            self.monster.Black_Boko()
-            self.rounds(self.monster.Black_Boko_fight)
-        elif choice == 3:
-            print("Going to Goo Mania! You are going to fight Silver Boko")
-            self.monster.Silver_Boko()
-            self.rounds(self.monster.Silver_Boko_fight)
-        elif choice == 4:
-            print("Going to Holy Sozia! You are going to fight Golden Boko!")
-            self.monster.Golden_Boko()
-            self.rounds(self.monster.Golden_Boko_fight)
-        elif choice == 5:
-            print("Going to Capital Drake! You are about to fight Zook")
-            self.monster.Zook()
-            self.rounds(self.monster.Zook_fight)
+            print(f"You are going to {enemies[choice]["name"]}. A wild {enemies[choice]["name"]} has appeared")
+        if choice == 1:
+            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")
+        if choice == 2:
+            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")       
+        if choice == 3:
+            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")
+        if choice == 4:
+            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")
+        if choice == 5:
+            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")
         else:
             print("Error! Please enter the number that accomodates the location of where you want to go!")
-    location()
+
+
+class Game:
+    
+    def locations(self):
+        for i, item in enumerate(locations):
+            print(i, ":", item['name'])
+        choice = int(input("What location do you want to travel to?"))
+        if 6>choice>=0:
+            input(f"You are going to {locations[choice]["name"]}.↓") 
+            input(f"{locations[choice]['description']}↓") 
+            input(f"A wild {enemies[choice]["name"]} has appeared.↓")
+        else:
+            print("Error! Please enter the number that accomodates the location of where you want to go!")
+
+
+
