@@ -1,3 +1,4 @@
+
 class Heroes:
     def __init__(self):
         self.name="YoYo"
@@ -48,10 +49,11 @@ class Attacks:
             print("Invalid choice!")
     show_attacks()
 
-class Monsters():
-    def __init__(self,hp,atk):
+""" class Monsters():
+    def __init__(self,hp,atk, message):
             self.hp = hp
             self.atk = atk
+            self.message = message
     
     def Boko(self):
           self.hp = 125
@@ -99,9 +101,20 @@ class Monsters():
     
     def Zook_fight(self):
             Heroes.health - Monsters.atk
-            print ("Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 3 damage.")
+            print ("Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 3 damage.") """
 
-class 
+class Monsters():
+    def __init__(self, hp, atk, message):
+        self.hp = hp
+        self.atk = atk
+        self.message = message
+    
+    def attack(self, hero):
+        hero.health -= self.atk
+        if hero.health < 0:
+            hero.health = 0
+        print(f"Boko attacks! You lost {self.atk} health. Remaining health: {hero.health}")
 
-
-
+def battle(monster, hero):
+    print("Boko appears! Get ready to fight!")
+    
