@@ -7,7 +7,6 @@ class Heroes:
     
 
     
-    
 attacks = [
 
 {
@@ -37,18 +36,61 @@ class Attacks():
         for i, item in enumerate(attacks):
             print(i, ":", item['name'])
         choice = int(input("Enter your choice: "))
-        if choice == 0:
-            print("You used spinkick! You dealt 15 damage!")
-        elif choice == 1:
-            print("You used sweep kick! You dealt 8 damage!")
-        elif choice == 2:
-            print("You used left hook! You dealt 25 damage!")
-        elif choice == 3:
-            print("You used uppercut combo! You dealt 30 damage!")
+        if 4>choice>=0:
+            print(f"You used {attacks[choice]["name"]}! You dealt {attacks[choice]["damage"]}!")
         else:
             print("Invalid choice!")
-    show_attacks()
 
+Monsters = [
+
+{
+    "name": "Boko",
+    "faction": "Boss",
+    "city": "Leafy Town",
+    "health": 125,
+    "atk": 15
+},
+
+{
+    "name":"Blue Boko",
+    "faction": "Boss",
+    "city": "Jumbo CIty",
+    "health": 65,
+    "atk": 55
+},
+
+{
+    "name": "Black Boko",
+    "faction": "Boss",
+    "city": "Death Mountain",
+    "health": 85,
+    "atk": 45
+},
+
+{
+    "name": "Silver Boko",
+    "faction": "Boss",
+    "city": "Goo Mania",
+    "health": 110,
+    "atk": 25
+},
+
+{
+    "name": "Golden Boko",
+    "faction": "Boss",
+    "city": "Holy Sozia",
+    "health": 150,
+    "atk": 35
+},
+
+{
+    "name": "Zook",
+    "faction": "Boss",
+    "city": "Capital Drake",
+    "health": 120,
+    "atk": 25
+}
+]
 
 
 class Monsters():
@@ -96,6 +138,7 @@ class Monsters():
 
 
 
+    
 
 
 
