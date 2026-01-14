@@ -29,27 +29,44 @@ locations = [
     "name": "Capital Drake",
     "description": "Capital Drake looks almost identical to cities found in Canada. You can find statues of Drake and his music around the whole capital."
 }
-
 ]
-
+from heroes import *
 class Map:
-    def location():
+    def __init__(self):
+        self.monster = Monsters()
+    def rounds(self,x):
+        while Heroes.health > 0 and self.monster.hp > 0:
+            Attacks.show_attacks
+            x()
+    def location(self):
         print("Welcome to the world of Doria, the land of the surprises and evil. Where do you want to explore first traveler?")
         for index, item in enumerate(locations):
             print(index, ":", item["name"])
         choice = int(input("According to the number that accomodates the location, where do you want to go?: "))
         if choice == 0:
             print("Going to Leafy Town! You are about to fight Boko!")
+            self.monster.Boko()
+            self.rounds(self.monster.Boko_fight)
         elif choice == 1:
             print("Going to Jumbo City! You are going to fight Blue Boko!")
+            self.monster.Blue_Boko()
+            self.rounds(self.monster.Blue_Boko_fight)
         elif choice == 2:
             print("Going to Death Mountain! You are going to fight Black Boko")        
+            self.monster.Black_Boko()
+            self.rounds(self.monster.Black_Boko_fight)
         elif choice == 3:
-            print("Going to Goo Mania! You are going to fight Silver Boko")         
+            print("Going to Goo Mania! You are going to fight Silver Boko")
+            self.monster.Silver_Boko()
+            self.rounds(self.monster.Silver_Boko_fight)
         elif choice == 4:
             print("Going to Holy Sozia! You are going to fight Golden Boko!")
+            self.monster.Golden_Boko()
+            self.rounds(self.monster.Golden_Boko_fight)
         elif choice == 5:
             print("Going to Capital Drake! You are about to fight Zook")
+            self.monster.Zook()
+            self.rounds(self.monster.Zook_fight)
         else:
             print("Error! Please enter the number that accomodates the location of where you want to go!")
     location()
