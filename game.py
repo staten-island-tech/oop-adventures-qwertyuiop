@@ -7,12 +7,12 @@ class Game:
                 print(i, ":", item['name'])
         choice = int(input("What location do you want to travel to?: "))
         if 6>choice>=0:
-                input(f"You are going to {locations[choice]["name"]}. ↓") 
+                input(f"You are headed to {locations[choice]["name"]}. ↓") 
                 input(f"{locations[choice]['description']} ↓") 
-                input(f"A wild {enemies[choice]["name"]} has appeared. ↓")
+                input(f"{enemies[choice]["name"]} has appeared. ↓")
                 mob = Monsters(enemies[choice]["name"], enemies[choice]["health"], enemies[choice]["atk"], enemies[choice]["attackdescription"])     
         else:
-                        print("Error! Please enter the number that accomodates the location of where you want to go!")
+                print("Error! Please enter the number that accomodates the location of where you want to go!")
         while Protaganist.health > 0 and mob.hp > 0:
                 print(f"{mob.name}: {mob.hp}")
                 print(f"{Protaganist.name}: {Protaganist.health}")
