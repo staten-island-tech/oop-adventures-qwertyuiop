@@ -89,46 +89,7 @@ enemies = [
 ]
 
 
-
-from heroes import *
-class Map:
-    def __init__(self):
-        self.monster = Monsters()
-    def show_attacks():
-        print("What attack do you want to execute?")
-        for i, item in enumerate(attacks):
-            print(i, ":", item['name'])
-        choice = int(input("Enter your choice: "))
-        if 4>choice>=0:
-            print(f"You used {attacks[choice]["name"]}! You dealt {attacks[choice]["damage"]}!")
-        else:
-            print("Invalid choice!")
-
-
-
-    def location(self):
-        print("Welcome to the world of Doria, the land of the surprises and evil. Where do you want to explore first traveler?")
-        for index, item in enumerate(locations):
-            print(index, ":", item["name"])
-        choice = int(input("According to the number that accomodates the location, where do you want to go?: "))
-        if choice == 0:
-            print(f"You are going to {enemies[choice]["name"]}. A wild {enemies[choice]["name"]} has appeared")
-        if choice == 1:
-            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")
-        if choice == 2:
-            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")       
-        if choice == 3:
-            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")
-        if choice == 4:
-            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")
-        if choice == 5:
-            print(f"You are going to {enemies[choice]["city"]}. A wild {enemies[choice]["name"]} has appeared")
-        else:
-            print("Error! Please enter the number that accomodates the location of where you want to go!")
-
-
 class Game:
-    
     def locations(self):
         for i, item in enumerate(locations):
             print(i, ":", item['name'])
