@@ -9,9 +9,19 @@ class Heroes:
         print("What attack do you want to execute?")
         for i, item in enumerate(attacks):
             print(i, ":", item['name'])
-        choice = int(input("Enter your choice: "))
+        while True:
+                user_choice = int(input("Based on the number that corresponds with the location, where do you want to travel to?: "))
+                        
+                try:
+                    choice = int(user_choice)
+                    if 0 <= choice < len(locations):
+                            break
+                    else:
+                        print("Error! Please enter a valid number that corresponds with the location.")
+                except ValueError:
+                        ("Invalid! Please try again. Enter a number.")
         if 4>choice>=0:
-            return attacks[choice]["damage"]
+            return attacks[choice]['damage']
         else:
             print("Invalid choice!")
     def take_damage(self,dmg):
@@ -25,22 +35,22 @@ attacks = [
 
 {
     "name": "Spinkick",
-    "damage": 15
+    "damage": 20
 },
 
 {
     "name": "Sweep kick",
-    "damage": 8
+    "damage": 12
 },
 
 {
     "name": "Left hook",
-    "damage": 25
+    "damage": 30
 },
 
 {
     "name": "Uppercut combo",
-    "damage": 30
+    "damage": 45
 }
 
 ]

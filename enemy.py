@@ -54,15 +54,20 @@ enemies = [
     "attackdescription": "Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 35 damage.",
 }
 ]
-from place import *
-from heroes import *
-class Monsters:
-    def __init__(self, name, hp,atk, description):
+
+class Enemy_Base:
+    def __init__(self, name, hp, atk):
         self.name = name
         self.hp = hp
         self.atk = atk
-        self.atkdescription = description
     def take_damage(self,dmg):
         self.hp -= dmg
         input(f"{self.name} has taken {dmg} damage. ↓")
+
+from place import *
+from heroes import *
+class Monsters(Enemy_Base):
+    def __init__(self, name, hp, atk, attackdescription):
+        super().__init__(name, hp, atk)
+        self.attackdescription = attackdescription
 

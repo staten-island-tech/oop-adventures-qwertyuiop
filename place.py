@@ -37,7 +37,7 @@ enemies = [
     "name": "Boko",
     "faction": "Boss",
     "city": "Leafy Town",
-    "health": 125,
+    "health": 115,
     "atk": 15,
     "attackdescription": "Boko executed a leaf hurricane that barely winded you. 15 health was lost.",
 },
@@ -45,7 +45,7 @@ enemies = [
 {
     "name":"Blue Boko",
     "faction": "Boss",
-    "city": "Jumbo CIty",
+    "city": "Jumbo City",
     "health": 65,
     "atk": 55,
     "attackdescription":"Blue Boko threw jumbo sized machinery at you dealing a total of 55 damage.",
@@ -56,7 +56,7 @@ enemies = [
     "faction": "Boss",
     "city": "Death Mountain",
     "health": 85,
-    "atk": 45,
+    "atk": 35,
     "attackdescription": "Black Boko raised the dead and skeletons swarm for 45 damage.",
 },
 
@@ -73,8 +73,8 @@ enemies = [
     "name": "Golden Boko",
     "faction": "Boss",
     "city": "Holy Sozia",
-    "health": 150,
-    "atk": 35,
+    "health": 130,
+    "atk": 30,
     "attackdescription": "Moving as fast as wind, the infamous Black Boko hit a Wuxi Fingerhold that deals 35 damage.",
 },
 
@@ -93,11 +93,11 @@ class Game:
     def locations(self):
         for i, item in enumerate(locations):
             print(i, ":", item['name'])
-        choice = int(input("What location do you want to travel to?"))
+        choice = int(input("Based on the number that coordinates with the location, where do you want to travel to?"))
         if 6>choice>=0:
-            input(f"You are going to {locations[choice]["name"]}.↓") 
-            input(f"{locations[choice]['description']}↓") 
-            input(f"A wild {enemies[choice]["name"]} has appeared.↓")
+            input(f"You are going to {locations[choice]['name']}. ↓") 
+            input(f"{locations[choice]['description']} ↓") 
+            input(f"A wild {enemies[choice]['name']} has appeared. ↓")
         else:
             print("Error! Please enter the number that accomodates the location of where you want to go!")
 
