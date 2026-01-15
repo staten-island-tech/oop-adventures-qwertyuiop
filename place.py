@@ -29,27 +29,77 @@ locations = [
     "name": "Capital Drake",
     "description": "Capital Drake looks almost identical to cities found in Canada. You can find statues of Drake and his music around the whole capital."
 }
-
 ]
 
-class Map:
-    def location():
-        print("Welcome to the world of Doria, the land of the surprises and evil. Where do you want to explore first traveler?")
-        for index, item in enumerate(locations):
-            print(index, ":", item["name"])
-        choice = int(input("According to the number that accomodates the location, where do you want to go? "))
-        if choice == 0:
-            print("Going to Leafy Town! You are about to fight Boko!")
-        elif choice == 1:
-            print("Going to Jumbo City! You are going to fight Blue Boko!")
-        elif choice == 2:
-            print("Going to Death Mountain! You are going to fight Black Boko!")
-        elif choice == 3:
-            print("Going to Goo Mania! You are going to fight Silver Boko!")
-        elif choice == 4:
-            print("Going to Holy Sozia! You are going to fight Golden Boko!")
-        elif choice == 5:
-            print("Going to Capital Drake! You are going to fight Zook!")
+enemies = [
+
+{
+    "name": "Boko",
+    "faction": "Boss",
+    "city": "Leafy Town",
+    "health": 125,
+    "atk": 15,
+    "attackdescription": "Boko executed a leaf hurricane that barely winded you. 15 health was lost.",
+},
+
+{
+    "name":"Blue Boko",
+    "faction": "Boss",
+    "city": "Jumbo CIty",
+    "health": 65,
+    "atk": 55,
+    "attackdescription":"Blue Boko threw jumbo sized machinery at you dealing a total of 55 damage.",
+},
+
+{
+    "name": "Black Boko",
+    "faction": "Boss",
+    "city": "Death Mountain",
+    "health": 85,
+    "atk": 45,
+    "attackdescription": "Black Boko raised the dead and skeletons swarm for 45 damage.",
+},
+
+{
+    "name": "Silver Boko",
+    "faction": "Boss",
+    "city": "Goo Mania",
+    "health": 110,
+    "atk": 25,
+    "attackdescription": "Silver Boko jumps and rains a gumdrop barrage. You lost 25 health.",
+},
+
+{
+    "name": "Golden Boko",
+    "faction": "Boss",
+    "city": "Holy Sozia",
+    "health": 150,
+    "atk": 35,
+    "attackdescription": "Moving as fast as wind, the infamous Black Boko hit a Wuxi Fingerhold that deals 35 damage.",
+},
+
+{
+    "name": "Zook",
+    "faction": "Boss",
+    "city": "Capital Drake",
+    "health": 120,
+    "atk": 25,
+    "attackdescription": "Zook tried to deafen your ears with Drake's Passion Fruit song but only dealt 35 damage.",
+}
+]
+
+
+class Game:
+    def locations(self):
+        for i, item in enumerate(locations):
+            print(i, ":", item['name'])
+        choice = int(input("What location do you want to travel to?"))
+        if 6>choice>=0:
+            input(f"You are going to {locations[choice]["name"]}.↓") 
+            input(f"{locations[choice]['description']}↓") 
+            input(f"A wild {enemies[choice]["name"]} has appeared.↓")
         else:
             print("Error! Please enter the number that accomodates the location of where you want to go!")
-    location()
+
+
+
